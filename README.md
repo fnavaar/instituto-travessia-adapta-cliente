@@ -6,13 +6,13 @@
 > proposta bruta, análise crítica ou fases futuras.
 >
 > **Como nasce:** esta pasta foi preparada pela consultoria a partir do workspace do projeto,
-> com conteúdo curado da Fase 1. A criação de repositório remoto e a publicação ficam fora deste
-> handoff até confirmação específica.
+> com conteúdo curado da Fase 1, e publicada no repositório público:
+> https://github.com/fnavaar/instituto-travessia-adapta-cliente
 >
 > **Como vive:** quando o plugin `adapta-cliente` estiver disponível, ele dará ao champion os comandos compostos
 > `/adapta-cliente:trabalhar`, `/adapta-cliente:destravar-task` e
 > `/adapta-cliente:finalizar-task`, além das skills atomicas `proxima-task`, `debug-task`,
-> `concluir-task` e `status`. A sincronização remota só será ativada depois da publicação autorizada.
+> `concluir-task` e `status`. A branch `main` é a referência publicada do projeto.
 
 ## Mapa da pasta
 

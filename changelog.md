@@ -8,4 +8,4 @@
 ## Registro
 
 - 2026-08-24 · Adapta Labs · Pasta operacional preparada; Fase 1 disponibilizada localmente com 15 tasks pendentes e 3 SPECs com TDD.
-- 2026-08-24 · Adapta Labs · Publicação remota, criação de repositório, commit, push e convite permanecem fora deste handoff.
+- 2026-08-24 · Adapta Labs · Repositório público criado e publicado em https://github.com/fnavaar/instituto-travessia-adapta-cliente; branch `main`, commit inicial `3333db5`.

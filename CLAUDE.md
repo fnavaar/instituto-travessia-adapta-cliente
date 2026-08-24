@@ -21,8 +21,8 @@ especialmente o champion designado pelo Instituto — na execução das tarefas 
    continuam disponíveis: `proxima-task`, `debug-task`, `concluir-task` e `status`.
 3. Fases concluídas ficam em `05_entregas/`. A próxima fase chega quando a atual fecha na
    reunião com o consultor.
-4. Esta pasta ainda não está publicada em repositório remoto; publicação e sincronização dependem de
-   autorização específica.
+4. Esta pasta está publicada em https://github.com/fnavaar/instituto-travessia-adapta-cliente,
+   na branch `main`.
 
 ## Regras para você (Claude)
 
