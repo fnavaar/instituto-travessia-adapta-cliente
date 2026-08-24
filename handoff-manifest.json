@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "adapta-cliente-handoff/v1",
+  "phase": 1,
+  "versions": {
+    "package": "0.1.0",
+    "adapta": "0.7.0",
+    "adaptaCliente": "0.2.0"
+  },
+  "generatedAt": "2026-08-24T18:17:27.663Z",
+  "files": [
+    {
+      "path": "04_fase-atual/README.md",
+      "sha256": "57843f15414253dfbcc46b12fc0860f4aa0481fefdd8440eca68b80a3663f4cc",
+      "classification": "template-publico"
+    },
+    {
+      "path": "04_fase-atual/fase.md",
+      "sha256": "d55a248cd95db1cea4fb98b034aa95c8c49a65ffd976185344d7ed39c73512c6",
+      "classification": "fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-001-central-de-fontes-e-piloto.md",
+      "sha256": "3ad4ccaee019bc228461e352d6ac84b808c67f5ae4b5cc921396f44341434ead",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-002-catalogo-de-regras-e-decisoes.md",
+      "sha256": "fed3ea4681484997b008f212fd16df9ab2d1de580c16410130b434518f71b4df",
+      "classification": "spec-fase-atual"
+    },
+    {
+      "path": "04_fase-atual/specs/spec-1-003-visao-gestao-a-vista-e-rls.md",
+      "sha256": "43f8b375627282d9d626a1bd5adcc2f5235d22d0fa34a70f8f138f969af091aa",
+      "classification": "spec-fase-atual"
+    }
+  ]
+}
