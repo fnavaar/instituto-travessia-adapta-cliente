@@ -11,8 +11,8 @@
 
 ## Progresso da fase
 
-- **Tasks:** 1/15 concluídas (7%) · próxima elegível do champion: F1-T006
-- **Próxima task do champion:** F1-T006 — preparar fixture de regras/decisões e matriz de alçadas.
+- **Tasks:** 1/15 concluídas (7%) · 1/15 em teste humano (F1-T006)
+- **Próxima task do champion:** F1-T006 — pacote de regras/decisões e alçadas registrado; aguarda teste humano do champion para concluir.
 
 ## Travas ativas
 
@@ -21,6 +21,9 @@
 | BLOQUEIO-1A — contrato/período piloto real | 2026-09-23 | Champion | Nomear contrato e período reais; fixture sintética em uso até lá. |
 | BLOQUEIO-1B — responsáveis e amostra mascarada | 2026-09-23 | Gestão de Contratos / DP-RH / Financeiro | Confirmar responsáveis nominais e entregar amostra mascarada. |
 | BLOQUEIO-1C — aprovação da matriz RLS | 2026-09-23 | Segurança/qualidade | Aprovar `04_fase-atual/F1-T001/matriz-rls.md` antes de qualquer dado real. |
+| BLOQUEIO-1D — regras e fontes iniciais | 2026-09-23 | Financeiro / DP-RH / Gestão de Contratos | Indicar as regras e fontes iniciais do piloto. |
+| BLOQUEIO-1E — alçadas e aprovadores | 2026-09-23 | Champion | Confirmar alçadas e aprovadores nominais (`F1-T006/matriz-alcadas.md`). |
+| BLOQUEIO-1F — fórmulas/precedência não fornecidas | 2026-09-23 | Responsáveis de domínio | Permanecem `pendente`; nunca inventar cálculo. |
 
 ## Entregas concluídas
 
