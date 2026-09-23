@@ -1,0 +1,117 @@
+{
+  "$schema": "adapta-cliente/fixture/v1",
+  "task": "F1-T001",
+  "spec": "SPEC-1-001",
+  "generatedAt": "2026-09-23",
+  "synthetic": true,
+  "notice": "Fixture 100% sintetica. Nenhum CPF, salario, dado bancario ou dado pessoal real.",
+  "contract": {
+    "contract_ref": "CTR-PILOTO-001",
+    "period": "2026-01..2026-12",
+    "owner": "responsavel.contratos@piloto.test",
+    "status": "piloto",
+    "sensitivity": "interna"
+  },
+  "sources": [
+    {
+      "source_ref": "SRC-CONTRATO-001",
+      "source_kind": "sharepoint",
+      "owner": "responsavel.contratos@piloto.test",
+      "sensitivity": "interna"
+    },
+    {
+      "source_ref": "SRC-FIN-001",
+      "source_kind": "excel",
+      "owner": "responsavel.financeiro@piloto.test",
+      "sensitivity": "interna"
+    }
+  ],
+  "responsibles": [
+    {
+      "role": "champion",
+      "name": "JP/Iverson - Champions",
+      "email": "champion@piloto.test"
+    },
+    {
+      "role": "contratos",
+      "name": "Responsavel de Contratos (a confirmar)",
+      "email": "responsavel.contratos@piloto.test"
+    },
+    {
+      "role": "financeiro",
+      "name": "Responsavel Financeiro (a confirmar)",
+      "email": "responsavel.financeiro@piloto.test"
+    }
+  ],
+  "lots": [
+    {
+      "lot_ref": "LOT-001",
+      "source_ref": "SRC-CONTRATO-001",
+      "source_version": "v1",
+      "period": "2026-01..2026-12",
+      "owner": "responsavel.contratos@piloto.test",
+      "sensitivity": "interna",
+      "quality": "ok",
+      "status": "valido",
+      "idempotency_key": "SRC-CONTRATO-001|v1|2026-01..2026-12"
+    },
+    {
+      "lot_ref": "LOT-002",
+      "source_ref": "SRC-FIN-001",
+      "source_version": "v1",
+      "period": "2026-01..2026-12",
+      "owner": "responsavel.financeiro@piloto.test",
+      "sensitivity": "interna",
+      "quality": "bloqueada",
+      "status": "com_pendencia",
+      "idempotency_key": "SRC-FIN-001|v1|2026-01..2026-12",
+      "missing_fields": ["source_version"]
+    }
+  ],
+  "documents": [
+    {
+      "doc_ref": "DOC-CONTRATO-001",
+      "lot_ref": "LOT-001",
+      "doc_type": "contrato",
+      "source_ref": "SRC-CONTRATO-001",
+      "source_version": "v1"
+    },
+    {
+      "doc_ref": "DOC-FIN-001",
+      "lot_ref": "LOT-002",
+      "doc_type": "relatorio_financeiro",
+      "source_ref": "SRC-FIN-001",
+      "source_version": "v1"
+    }
+  ],
+  "pendencies": [
+    {
+      "pendency_ref": "PEND-001",
+      "lot_ref": "LOT-002",
+      "reason": "campo obrigatorio ausente (source_version)",
+      "owner": "responsavel.financeiro@piloto.test",
+      "due": "2026-09-30",
+      "next_action": "reenviar lote corrigido como nova versao",
+      "status": "aberta"
+    }
+  ],
+  "scenarios": {
+    "duplicate": {
+      "description": "reenvio identico do LOT-001",
+      "lot_ref": "LOT-001",
+      "source_ref": "SRC-CONTRATO-001",
+      "source_version": "v1",
+      "period": "2026-01..2026-12",
+      "expected": "idempotente — nao cria nova versao"
+    },
+    "corrected_version": {
+      "description": "correcao do LOT-002 como nova versao",
+      "lot_ref": "LOT-002",
+      "source_ref": "SRC-FIN-001",
+      "source_version": "v2",
+      "period": "2026-01..2026-12",
+      "reason": "inclusao do campo source_version",
+      "expected": "nova versao auditada; versao anterior preservada"
+    }
+  }
+}
