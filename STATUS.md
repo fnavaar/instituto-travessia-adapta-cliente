@@ -11,8 +11,8 @@
 
 ## Progresso da fase
 
-- **Tasks:** 1/15 concluídas (7%) · 1/15 em teste humano (F1-T006)
-- **Próxima task do champion:** F1-T006 — pacote de regras/decisões e alçadas registrado; aguarda teste humano do champion para concluir.
+- **Tasks:** 2/15 concluídas (13%) · próxima elegível do champion: F1-T011 (dono Segurança/qualidade) ou F1-T002/F1-T007 (dependem de F1-T001/F1-T006)
+- **Próxima task do champion:** F1-T011 é de Segurança/qualidade; as tasks do champion na onda 1 (F1-T001 e F1-T006) estão concluídas. Próximas do champion na onda 3+: F1-T008 (após F1-T007).
 
 ## Travas ativas
 
@@ -30,6 +30,7 @@
 | Fase | O que foi entregue | Fechada em |
 |---|---|---|
 | 1 | F1-T001 — pacote de pré-condições da central (manifesto, matriz RLS proposta, fixture sintética) | 2026-09-23 |
+| 1 | F1-T006 — fixture de regras/decisões e matriz de alçadas (sintética; bloqueios 1D/1E/1F) | 2026-09-23 |
 | 1 | Central operacional, catálogo de regras/decisões, visão inicial e RLS em dados controlados | Em execução |
 
 ## Próxima reunião
