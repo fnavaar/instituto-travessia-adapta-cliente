@@ -1,0 +1,101 @@
+{
+  "$schema": "adapta-cliente/fixture/v1",
+  "task": "F1-T006",
+  "spec": "SPEC-1-002",
+  "generatedAt": "2026-09-23",
+  "synthetic": true,
+  "notice": "Fixture 100% sintetica. Nenhuma formula, rateio, arredondamento ou precedencia real foi inventada. Regras sem fonte/vigencia permanecem pendentes (BLOQUEIO-1F).",
+  "rules": [
+    {
+      "rule_id": "RN-PILOTO-001",
+      "name": "Vigencia contratual minima",
+      "type": "contrato",
+      "description": "Regra fornecida pelo responsavel de dominio; vigencia e escopo declarados.",
+      "source_ref": "SRC-CONTRATO-001",
+      "source_version": "v1",
+      "vigencia": "2026-01..2026-12",
+      "escopo": "CTR-PILOTO-001",
+      "version": "r1",
+      "owner": "responsavel.contratos@piloto.test",
+      "state": "aprovada",
+      "approver": "aprovador.contratos@piloto.test",
+      "exceptions": "correcao editorial sem mudanca de significado registra justificativa"
+    },
+    {
+      "rule_id": "RN-PILOTO-002",
+      "name": "Regra sem fonte declarada",
+      "type": "processo",
+      "description": "Regra descrita, porem sem fonte e sem vigencia confirmadas.",
+      "source_ref": null,
+      "source_version": null,
+      "vigencia": null,
+      "escopo": "CTR-PILOTO-001",
+      "version": "r1",
+      "owner": "responsavel.dprh@piloto.test",
+      "state": "pendente",
+      "approver": null,
+      "exceptions": null,
+      "blocked_by": "BLOQUEIO-1D — fonte/vigencia nao fornecidas"
+    },
+    {
+      "rule_id": "RN-PILOTO-003",
+      "name": "Regra com fontes conflitantes",
+      "type": "financeiro",
+      "description": "Duas fontes apresentam valores divergentes; precedencia nao fornecida.",
+      "sources": [
+        { "source_ref": "SRC-FIN-001", "source_version": "v1", "value_ref": "VALOR-A" },
+        { "source_ref": "SRC-FIN-002", "source_version": "v1", "value_ref": "VALOR-B" }
+      ],
+      "vigencia": "2026-01..2026-12",
+      "escopo": "CTR-PILOTO-001",
+      "version": "r1",
+      "owner": "responsavel.financeiro@piloto.test",
+      "state": "conflitante",
+      "approver": null,
+      "exceptions": null,
+      "blocked_by": "BLOQUEIO-1F — precedencia nao fornecida; nao escolher automaticamente"
+    }
+  ],
+  "decision": {
+    "decision_id": "DEC-PILOTO-001",
+    "question": "Qual valor de referencia usar no periodo piloto?",
+    "context": "Decisao comparavel com dois valores disponiveis das fontes do piloto.",
+    "related_records": ["CTR-PILOTO-001", "SRC-FIN-001", "SRC-FIN-002"],
+    "comparison": [
+      { "option": "VALOR-A", "source_ref": "SRC-FIN-001", "value": 1000 },
+      { "option": "VALOR-B", "source_ref": "SRC-FIN-002", "value": 1150 }
+    ],
+    "options": ["VALOR-A", "VALOR-B"],
+    "recommendation": {
+      "label": "sugestao/inferencia",
+      "text": "VALOR-A aparece como opcao provavel pelo cruzamento das fontes.",
+      "source_ref": "SRC-FIN-001",
+      "confidence": "baixa — cobertura parcial da fonte",
+      "limits": "Nao altera estado sozinha; exige veredito humano."
+    },
+    "owner": "responsavel.financeiro@piloto.test",
+    "alcada": "aprovador.financeiro@piloto.test",
+    "veredito": null,
+    "justificativa": null,
+    "evidence": null,
+    "state": "aberta",
+    "due": "2026-09-30",
+    "next_action": "aprovador da alcada registra veredito, justificativa e evidencia"
+  },
+  "test_approvers": [
+    { "domain": "contratos", "approver": "aprovador.contratos@piloto.test" },
+    { "domain": "dprh", "approver": "aprovador.dprh@piloto.test" },
+    { "domain": "financeiro", "approver": "aprovador.financeiro@piloto.test" },
+    { "domain": "champion", "approver": "champion@piloto.test", "note": "acompanha e encaminha; nao substitui a alcada do dominio" }
+  ],
+  "error_paths": [
+    "fonte ausente",
+    "fonte conflitante",
+    "vigencia fora do periodo",
+    "alcada inexistente",
+    "decisao sem evidencia",
+    "tentativa de autoaprovacao",
+    "reabertura sem motivo",
+    "RLS negado"
+  ]
+}
