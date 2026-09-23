@@ -1,6 +1,6 @@
 # STATUS — Projeto Instituto Travessia
 
-> **Atualizado em:** 2026-08-24 · **Por:** Adapta Labs
+> **Atualizado em:** 2026-09-23 · **Por:** Agente do cliente (Adapta Cliente)
 > O painel do projeto: fase atual, progresso e o que precisa de atenção.
 
 ## Onde estamos
@@ -11,16 +11,16 @@
 
 ## Progresso da fase
 
-- **Tasks:** 0/15 (0%)
-- **Próxima task do champion:** F1-T001 — preparar contrato/período piloto, fixture mascarada e pacote de pré-condições da central.
+- **Tasks:** 0/15 concluídas · **1/15 em teste humano** (F1-T001)
+- **Próxima task do champion:** F1-T001 — pacote de pré-condições registrado; aguarda teste humano do champion para concluir.
 
 ## Travas ativas
 
 | Trava | Desde | Quem resolve | Ação em curso |
 |---|---|---|---|
-| Contrato/período e fixture do piloto | 2026-08-24 | Champion e responsáveis de domínio | Registrar fontes, campos, responsáveis e matriz RLS sem dado real. |
-| Regras, fontes e alçadas | 2026-08-24 | Responsáveis de domínio e aprovadores | Disponibilizar fixtures sem inventar fórmula, precedência ou vigência. |
-| RLS e identidades de teste | 2026-08-24 | Segurança/qualidade | Aprovar matriz autorizado/negado antes de qualquer carga real. |
+| BLOQUEIO-1A — contrato/período piloto real | 2026-09-23 | Champion | Nomear contrato e período reais; fixture sintética em uso até lá. |
+| BLOQUEIO-1B — responsáveis e amostra mascarada | 2026-09-23 | Gestão de Contratos / DP-RH / Financeiro | Confirmar responsáveis nominais e entregar amostra mascarada. |
+| BLOQUEIO-1C — aprovação da matriz RLS | 2026-09-23 | Segurança/qualidade | Aprovar `04_fase-atual/F1-T001/matriz-rls.md` antes de qualquer dado real. |
 
 ## Entregas concluídas
 
