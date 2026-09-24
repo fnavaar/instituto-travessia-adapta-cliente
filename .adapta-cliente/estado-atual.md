@@ -1,14 +1,14 @@
 # Estado atual — Adapta Cliente
 
-- task_id: (nenhuma)
+- task_id: F1-T012
 - champion: JP/Iverson - Champions
-- spec: —
-- etapa: sem_task
-- autorizacao_implementacao: —
+- spec: 04_fase-atual/specs/spec-1-003-visao-gestao-a-vista-e-rls.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: pendente — aguarda mensagem explícita do champion
 - teste_humano: —
 - verificacao_automatica: —
-- aprendizado: capturado AP-2026-09-24-1130
-- ultima_acao: F1-T007 concluída (teste humano OK + revalidação independente)
-- proxima_acao: aguardar pedido explícito (F1-T012 elegível Onda 2; F1-T003/F1-T008 liberadas por pré-condição mas exigem pedido)
-- atualizado_em: 2026-09-24T11:30-03:00
-- nota_dono: —
+- aprendizado: pendente
+- ultima_acao: análise profunda F1-T012 (execute→proxima-task); relatório entregue; parada no portão 1
+- proxima_acao: aguardar "Autorizo implementar a F1-T012 conforme o plano"
+- atualizado_em: 2026-09-24T11:36-03:00
+- nota_dono: dono formal = Responsável pela superfície Ethos; champion coordena
