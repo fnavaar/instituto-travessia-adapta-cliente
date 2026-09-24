@@ -1,13 +1,13 @@
-# Debug F1-T002 — login e dados (2026-09-24)
+# Debug F1-T002 — login e dados (2026-09-24) · FECHADO
 
 ## Sintomas
 
 1. Login inicial falhou (usuário seed inexistente).
-2. Após botão create-user: login OK, **lista vazia** (reteste B).
+2. Após botão create-user: login OK, lista vazia (reteste B).
 
 ## Causa
 
-Skip Cloud **não aplica** migrations (`0001`–`0003` ficam `pending`; apply → abort/502). PocketBase só tem coleção `users`.
+Skip Cloud não aplica migrations (`0001`–`0003` ficam pending; apply → abort/502). PocketBase só tem coleção `users`.
 
 ## Correções
 
@@ -15,14 +15,12 @@ Skip Cloud **não aplica** migrations (`0001`–`0003` ficam `pending`; apply �
 |---|---|
 | 0.0.8 | Botão "Criar usuário de teste e entrar" |
 | 0.0.11–0.0.12 | Schema fatiado (ainda pending no Cloud) |
-| **0.0.12** | **Fallback fixture F1-T001** em `src/lib/piloto-fixture.ts` + `Piloto.tsx` — entrada controlada quando PB falha |
+| **0.0.12** | **Fallback fixture F1-T001** — entrada controlada |
 
-## Reteste
+## Aceite
 
-1. Hard refresh https://travessia-8e0be--preview.goskip.app/piloto
-2. Entrar (criar usuário se preciso)
-3. Deve aparecer badge **modo: entrada controlada (fixture F1-T001)** e CTR-PILOTO-001 / LOT-001 / LOT-002 / docs / PEND-001
+Champion confirmou **OK** no modo fixture (CTR-PILOTO-001 + lotes). Task concluída com desvio PB declarado.
 
 ## Dívida
 
-- adapta-divida: fixture embutida na UI; upgrade quando Skip Cloud aplicar migrations PB
+- adapta-divida: fixture embutida na UI; upgrade quando Skip Cloud aplicar migrations PB.

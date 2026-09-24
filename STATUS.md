@@ -7,12 +7,12 @@
 
 - **Fase atual:** 1 — Amplificar: central da verdade e das decisões · aberta em 2026-08-24 · reunião de fechamento a agendar
 - **Objetivo desta fase:** consultar uma visão única de dados, regras, pendências e decisões, usando dados controlados e RLS validado.
-- **No prazo?** em risco — Onda 1 concluída; F1-T002 em teste humano com **bloqueio Skip Cloud** (migrations 502/abort).
+- **No prazo?** em risco — Onda 1 completa; F1-T002 concluída com desvio Skip Cloud; F1-T007 e F1-T012 ainda pendentes na Onda 2.
 
 ## Progresso da fase
 
-- **Tasks:** 3/15 concluídas (20%) · 1/15 em teste humano (F1-T002)
-- **Ativa:** F1-T002 — UI `/piloto` e migrations no working tree; apply no Cloud **não confirmado** (backend unavailable).
+- **Tasks:** 4/15 concluídas (27%) · nenhuma ativa
+- **Última concluída:** F1-T002 — central `/piloto` com fixture F1-T001 (entrada controlada); schema PB Cloud ainda dívida de plataforma.
 
 ## Travas ativas
 
@@ -27,7 +27,7 @@
 | BLOQUEIO-1G — identidades nominais de teste | 2026-09-24 | Segurança/qualidade + champion | Confirmar identidades em `F1-T011/identidades-teste.md`. |
 | BLOQUEIO-1H — retenção/exportação/campos sensíveis | 2026-09-24 | Segurança/qualidade | Aprovar `F1-T011/politica-dados.md`. |
 | BLOQUEIO-1I — aceite fixtures auth/negado | 2026-09-24 | Segurança/qualidade | Aceitar `F1-T011/fixture-rls.json` formalmente. |
-| Skip Cloud migrations F1-T002 | 2026-09-24 | Plataforma Skip / agente | Reaplicar 0001/0002 quando Cloud sair de 502/abort. |
+| Skip Cloud migrations F1-T002 (dívida) | 2026-09-24 | Plataforma Skip / agente | Reaplicar 0001–0003 quando Cloud sair de abort; UI já opera em fixture. |
 
 ## Entregas concluídas
 
@@ -36,6 +36,7 @@
 | 1 | F1-T001 — pacote de pré-condições da central | 2026-09-23 |
 | 1 | F1-T006 — fixture de regras/decisões e matriz de alçadas | 2026-09-23 |
 | 1 | F1-T011 — matriz RLS, identidades, fixtures auth/negado e política de dados | 2026-09-24 |
+| 1 | F1-T002 — contrato/período e lote com proveniência (UI `/piloto`, fixture controlada) | 2026-09-24 |
 | 1 | Central operacional, catálogo de regras/decisões, visão inicial e RLS em dados controlados | Em execução |
 
 ## Próxima reunião
