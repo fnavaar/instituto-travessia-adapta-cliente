@@ -10,3 +10,4 @@ Registro das triagens internas. Uma linha por triagem.
 - 2026-09-24T11:48-03:00 · task F1-T012 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1148-agregar-fixtures-na-visao.md
 - 2026-09-24T11:58-03:00 · task F1-T003 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1158-cenarios-fixture-como-botoes.md
 - 2026-09-24T12:08-03:00 · task F1-T008 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1208-sugestao-nunca-fecha-sozinha.md
+- 2026-09-24T12:25-03:00 · task F1-T013 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1225-negacao-sem-payload.md
