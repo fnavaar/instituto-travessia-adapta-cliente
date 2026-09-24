@@ -1,7 +1,7 @@
 # Manifesto — regras registradas F1-T007 (SPEC-1-002)
 
 > **Task:** F1-T007 · **Dono formal:** Responsável de domínio · **Coordenação:** Champion (JP/Iverson)
-> **Gerado em:** 2026-09-24 · **Por:** agente do cliente (Adapta Cliente)
+> **Gerado em:** 2026-09-24 · **Concluída em:** 2026-09-24T11:30-03:00
 > **Regra:** nenhum dado real; fixture F1-T006; sem inventar fórmula/precedência (1F).
 
 ## 1. Objetivo
@@ -43,19 +43,12 @@ consultável (CA-1-006) e bloquear aprovação inválida (CA-1-007 / RN-1.002-01
 - **Nova versão (RN-1.002-02):** a partir de aprovada, cria `rN+1` `pendente` e **preserva** `r1`.
 - **Log:** trilha de aprovação/bloqueio na própria tela (sintético).
 
-## 6. Desvio / dívida
+## 6. Evidência de aceite
 
-PocketBase Cloud continua sem coleções de domínio (migrations F1-T002 pending/abort).
-F1-T007 **não** depende de PB: catálogo via fixture (mesmo padrão AP-2026-09-24-1113).
+- Teste humano do champion: **OK** (2026-09-24).
+- Revalidação independente: rota, fixture, `canApproveRule`, sem dado real — PASSOU.
+- Desvio: schema PB Cloud não applied (dívida F1-T002; fora do gate desta task).
 
 ## 7. Fora de escopo
 
 DEC-PILOTO-001 / veredito (F1-T008), reabertura completa (F1-T010), alçadas nominais (1E), publish.
-
-## 8. Teste humano sugerido
-
-1. Hard refresh https://travessia-8e0be--preview.goskip.app/regras
-2. Abrir detalhe **RN-PILOTO-001** — conferir fonte, versão, vigência, escopo, owner, state, approver, exceções
-3. Em **RN-PILOTO-002** e **RN-PILOTO-003**: clicar **Tentar aprovar** → deve **bloquear** e aparecer no log
-4. (Opcional) Em 001: **Criar nova versão** → r1 permanece; r2 pendente
-5. Confirmar ausência de dado real
