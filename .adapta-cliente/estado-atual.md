@@ -3,12 +3,12 @@
 - task_id: F1-T012
 - champion: JP/Iverson - Champions
 - spec: 04_fase-atual/specs/spec-1-003-visao-gestao-a-vista-e-rls.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: pendente — aguarda mensagem explícita do champion
+- etapa: implementando
+- autorizacao_implementacao: confirmada 2026-09-24T11:40-03:00 · "Autorizo implementar a F1-T012 conforme o plano"
 - teste_humano: —
-- verificacao_automatica: —
+- verificacao_automatica: em curso
 - aprendizado: pendente
-- ultima_acao: análise profunda F1-T012 (execute→proxima-task); relatório entregue; parada no portão 1
-- proxima_acao: aguardar "Autorizo implementar a F1-T012 conforme o plano"
-- atualizado_em: 2026-09-24T11:36-03:00
+- ultima_acao: autorização explícita recebida; iniciando UI /visao + alertas internos
+- proxima_acao: apply Skip + pacote evidência + teste humano
+- atualizado_em: 2026-09-24T11:40-03:00
 - nota_dono: dono formal = Responsável pela superfície Ethos; champion coordena
