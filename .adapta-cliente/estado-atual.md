@@ -1,14 +1,14 @@
 # Estado atual — Adapta Cliente
 
-- task_id: (nenhuma)
+- task_id: F1-T004
 - champion: JP/Iverson - Champions
-- spec: —
-- etapa: sem_task
-- autorizacao_implementacao: —
+- spec: 04_fase-atual/specs/spec-1-001-central-de-fontes-e-piloto.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: pendente — aguarda mensagem explícita do champion
 - teste_humano: —
 - verificacao_automatica: —
-- aprendizado: capturado AP-2026-09-24-1225
-- ultima_acao: F1-T013 concluída (teste humano OK + revalidação independente); Onda 3 completa 3/3
-- proxima_acao: aguardar pedido explícito (Onda 4: F1-T004 / F1-T009 / F1-T014 — T014 exige F1-T013 ✓)
-- atualizado_em: 2026-09-24T12:25-03:00
-- nota_dono: —
+- aprendizado: pendente
+- ultima_acao: análise profunda F1-T004 (execute→proxima-task Onda 4); relatório entregue; parada no portão 1
+- proxima_acao: aguardar "Autorizo implementar a F1-T004 conforme o plano"
+- atualizado_em: 2026-09-24T13:12-03:00
+- nota_dono: dono formal = Responsável pela superfície Ethos; champion coordena
