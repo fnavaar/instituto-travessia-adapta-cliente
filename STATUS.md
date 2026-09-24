@@ -7,12 +7,12 @@
 
 - **Fase atual:** 1 — Amplificar: central da verdade e das decisões · aberta em 2026-08-24 · reunião de fechamento a agendar
 - **Objetivo desta fase:** consultar uma visão única de dados, regras, pendências e decisões, usando dados controlados e RLS validado.
-- **No prazo?** em risco — Ondas 1–2 completas; F1-T003 (Onda 3) concluída; restam F1-T008 e F1-T013 na Onda 3.
+- **No prazo?** em risco — Ondas 1–2 completas; Onda 3 com F1-T003 e F1-T008 concluídas; resta F1-T013.
 
 ## Progresso da fase
 
-- **Tasks:** 7/15 concluídas (47%) · nenhuma ativa
-- **Última concluída:** F1-T003 — bordas de lote `/lotes` (UI v0.0.17) com CA-1-002/003.
+- **Tasks:** 8/15 concluídas (53%) · nenhuma ativa
+- **Última concluída:** F1-T008 — decisão `/decisoes` (UI v0.0.18) com comparativo e sugestão separada (CA-1-008).
 
 ## Travas ativas
 
@@ -40,6 +40,7 @@
 | 1 | F1-T007 — regras versionadas com fonte/vigência/estado (UI `/regras`, CA-1-006/007) | 2026-09-24 |
 | 1 | F1-T012 — visão contrato/período + alertas internos (UI `/visao`, CA-1-011/013) | 2026-09-24 |
 | 1 | F1-T003 — rejeição/pendência/idempotência/versão de lote (UI `/lotes`, CA-1-002/003) | 2026-09-24 |
+| 1 | F1-T008 — decisão com comparativo e sugestão separada (UI `/decisoes`, CA-1-008) | 2026-09-24 |
 | 1 | Central operacional, catálogo de regras/decisões, visão inicial e RLS em dados controlados | Em execução |
 
 ## Próxima reunião

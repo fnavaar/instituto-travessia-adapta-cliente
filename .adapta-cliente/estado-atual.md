@@ -1,14 +1,14 @@
 # Estado atual — Adapta Cliente
 
-- task_id: F1-T008
+- task_id: (nenhuma)
 - champion: JP/Iverson - Champions
-- spec: 04_fase-atual/specs/spec-1-002-catalogo-de-regras-e-decisoes.md
-- etapa: aguardando_teste_humano
-- autorizacao_implementacao: confirmada 2026-09-24T12:02-03:00 · "Autorizo implementar a F1-T008 conforme o plano"
-- teste_humano: pendente
-- verificacao_automatica: parcial · build/static/test/integrations OK (Skip v0.0.18); rota /decisoes; DEC-PILOTO-001; applyVerdict; sugestão não fecha sozinha
-- aprendizado: pendente
-- ultima_acao: UI /decisoes + decisao-fixture publicados (0.0.18)
-- proxima_acao: teste humano em /decisoes (CA-1-008 + RN-1.002-04)
-- atualizado_em: 2026-09-24T12:05-03:00
-- nota_dono: dono formal = Champion; champion coordena
+- spec: —
+- etapa: sem_task
+- autorizacao_implementacao: —
+- teste_humano: —
+- verificacao_automatica: —
+- aprendizado: capturado AP-2026-09-24-1208
+- ultima_acao: F1-T008 concluída (teste humano OK + revalidação independente)
+- proxima_acao: aguardar pedido explícito (Onda 3 restante: F1-T013; F1-T004 e F1-T009 liberadas por pré-condição)
+- atualizado_em: 2026-09-24T12:08-03:00
+- nota_dono: —
