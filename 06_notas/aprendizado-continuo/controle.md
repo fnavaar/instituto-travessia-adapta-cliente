@@ -7,3 +7,4 @@ Registro das triagens internas. Uma linha por triagem.
 - 2026-09-24T09:18-03:00 · task F1-T011 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-0918-pedido-em-lote-nao-fecha-fase.md
 - 2026-09-24T11:13-03:00 · task F1-T002 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1113-fallback-quando-plataforma-falha.md
 - 2026-09-24T11:30-03:00 · task F1-T007 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1130-validacao-ca-como-funcao-pura.md
+- 2026-09-24T11:48-03:00 · task F1-T012 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1148-agregar-fixtures-na-visao.md

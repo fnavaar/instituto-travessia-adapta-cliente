@@ -1,7 +1,7 @@
 # Manifesto — visão e alertas internos F1-T012 (SPEC-1-003)
 
 > **Task:** F1-T012 · **Dono formal:** Responsável pela superfície Ethos · **Coordenação:** Champion (JP/Iverson)
-> **Gerado em:** 2026-09-24 · **Por:** agente do cliente (Adapta Cliente)
+> **Gerado em:** 2026-09-24 · **Concluída em:** 2026-09-24T11:48-03:00
 > **Regra:** nenhum dado real; fixtures F1-T001+006+011; sem alerta externo; sem alterar permissão global.
 
 ## 1. Objetivo
@@ -41,29 +41,11 @@ Configurar visão do contrato/período com filtros e alertas internos deduplicad
 | LOT-002 | lot | cobertura incompleta (não como OK) |
 | IND-COBERTURA-PILOTO | indicator | CA-1-013 metadados + badge incompleta |
 
-## 5. Filtros e papel de teste
+## 5. Evidência de aceite
 
-- Filtros: contrato, período, área, responsável, status
-- Papéis: champion / contratos / financeiro / dprh / direcao / negado
-- Recorte via `allowed_roles` (F1-T011); papel **negado** → lista vazia
-- Filtro UI **não** substitui autorização (RLS runtime = F1-T013)
+- Teste humano do champion: **OK** (2026-09-24).
+- Revalidação independente: rota, fixture, filtros, dedupe, cobertura incompleta, sem dado real — PASSOU.
 
-## 6. Alertas internos
+## 6. Fora de escopo
 
-- Painel local apenas (sem e-mail/webhook)
-- Chave dedupe: `object_ref|state|due` (`upsertAlert`)
-- Botão "Reemitir alerta PEND-001" prova RN-1.003-06 (atualiza, não duplica)
-- Cada alerta: fonte, período, regra/versão, cobertura, próxima ação
-
-## 7. Fora de escopo
-
-F1-T013 (RLS auth/negado completo + audit PB), F1-T008 (veredito), publish, dado real, alerta externo.
-
-## 8. Teste humano sugerido
-
-1. Hard refresh https://travessia-8e0be--preview.goskip.app/visao
-2. Papel **Champion** — ver PEND-001, DEC-PILOTO-001, DEC-ORFA-001, LOT-002 cobertura incompleta
-3. Filtrar contrato CTR-PILOTO-001 / área AREA-FIN
-4. Papel **negado** — lista vazia
-5. **Reemitir alerta PEND-001** — não duplicar linha
-6. Confirmar só dados sintéticos @piloto.test
+F1-T013 (RLS auth/negado completo + audit), F1-T008 (veredito), publish, dado real, alerta externo.
