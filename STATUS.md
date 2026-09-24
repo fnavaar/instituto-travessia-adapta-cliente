@@ -7,12 +7,12 @@
 
 - **Fase atual:** 1 — Amplificar: central da verdade e das decisões · aberta em 2026-08-24 · reunião de fechamento a agendar
 - **Objetivo desta fase:** consultar uma visão única de dados, regras, pendências e decisões, usando dados controlados e RLS validado.
-- **No prazo?** em risco — as 15 tasks ainda dependem de fontes, responsáveis, fixtures e evidências operacionais.
+- **No prazo?** em risco — Onda 1 de pré-condições concluída (3/3); Onda 2+ ainda depende de schema no Skip, responsáveis e bloqueios 1A–1I.
 
 ## Progresso da fase
 
-- **Tasks:** 2/15 concluídas (13%) · 1/15 em teste humano (F1-T011)
-- **Próxima task do champion:** F1-T011 — pacote RLS registrado; aguarda teste humano (e aprovação formal de Segurança/qualidade nos bloqueios 1C/1G/1H/1I).
+- **Tasks:** 3/15 concluídas (20%) · Onda 1 completa (F1-T001, F1-T006, F1-T011)
+- **Próxima elegível:** F1-T002 (Gestão de Contratos — lote no Skip), F1-T007 (regras versionadas) ou F1-T012 (visão) — exigem pedido explícito e, no caso do Skip, implementação de schema.
 
 ## Travas ativas
 
@@ -20,7 +20,7 @@
 |---|---|---|---|
 | BLOQUEIO-1A — contrato/período piloto real | 2026-09-23 | Champion | Nomear contrato e período reais; fixture sintética em uso até lá. |
 | BLOQUEIO-1B — responsáveis e amostra mascarada | 2026-09-23 | Gestão de Contratos / DP-RH / Financeiro | Confirmar responsáveis nominais e entregar amostra mascarada. |
-| BLOQUEIO-1C — aprovação da matriz RLS | 2026-09-23 | Segurança/qualidade | Aprovar `04_fase-atual/F1-T011/matriz-rls-completa.md` (e herança F1-T001). |
+| BLOQUEIO-1C — aprovação da matriz RLS | 2026-09-23 | Segurança/qualidade | Aprovar `04_fase-atual/F1-T011/matriz-rls-completa.md` (pacote entregue; aceite formal pendente). |
 | BLOQUEIO-1D — regras e fontes iniciais | 2026-09-23 | Financeiro / DP-RH / Gestão de Contratos | Indicar as regras e fontes iniciais do piloto. |
 | BLOQUEIO-1E — alçadas e aprovadores | 2026-09-23 | Champion | Confirmar alçadas e aprovadores nominais (`F1-T006/matriz-alcadas.md`). |
 | BLOQUEIO-1F — fórmulas/precedência não fornecidas | 2026-09-23 | Responsáveis de domínio | Permanecem `pendente`; nunca inventar cálculo. |
@@ -32,8 +32,9 @@
 
 | Fase | O que foi entregue | Fechada em |
 |---|---|---|
-| 1 | F1-T001 — pacote de pré-condições da central (manifesto, matriz RLS proposta, fixture sintética) | 2026-09-23 |
-| 1 | F1-T006 — fixture de regras/decisões e matriz de alçadas (sintética; bloqueios 1D/1E/1F) | 2026-09-23 |
+| 1 | F1-T001 — pacote de pré-condições da central | 2026-09-23 |
+| 1 | F1-T006 — fixture de regras/decisões e matriz de alçadas | 2026-09-23 |
+| 1 | F1-T011 — matriz RLS, identidades, fixtures auth/negado e política de dados | 2026-09-24 |
 | 1 | Central operacional, catálogo de regras/decisões, visão inicial e RLS em dados controlados | Em execução |
 
 ## Próxima reunião
