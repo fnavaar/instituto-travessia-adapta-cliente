@@ -5,10 +5,11 @@
 
 ## Registro
 
-- 2026-09-24 · JP/Iverson - Champions · Task F1-T008 concluída: decisão `/decisoes` (Skip 60853, UI v0.0.18) — DEC-PILOTO-001 com comparativo VALOR-A/B; card sugestão/inferência separado do veredito; `applyVerdict` só pela alçada; bloqueio de auto-sugestão (CA-1-008 · RN-1.002-04); fixture F1-T006. Evidência: teste humano OK; revalidação independente. Aprendizado AP-2026-09-24-1208. STATUS 8/15 (53%).
-- 2026-09-24 · Agente do cliente · F1-T008 executada: decisão `/decisoes` UI v0.0.18. Aguarda teste humano.
-- 2026-09-24 · Agente do cliente · F1-T008 analisada (execute→proxima-task Onda 3): elegível; aguardando_autorizacao.
-- 2026-09-24 · JP/Iverson - Champions · Task F1-T003 concluída: bordas de lote `/lotes` UI v0.0.17; CA-1-002/003. STATUS 7/15 (47%). AP-2026-09-24-1158.
+- 2026-09-24 · Agente do cliente · F1-T013 executada: bateria RLS `/rls` no Skip Travessia 60853 (UI v0.0.19) — `canAccess`/`probeAccess`/`runBattery` (CA-1-012 · RN-1.003-01); negação FORBIDDEN sem payload; audit log; fixture F1-T011; desvio PB Cloud (só users). QA setup/static/build/test/integrations OK. Evidências em `04_fase-atual/F1-T013/`. Aguarda teste humano.
+- 2026-09-24 · Agente do cliente · F1-T013 analisada (execute→proxima-task Onda 3 restante): elegível; relatório em `04_fase-atual/F1-T013/analise-proxima-task.md`; estado aguardando_autorizacao.
+- 2026-09-24 · JP/Iverson - Champions · Task F1-T008 concluída: decisão `/decisoes` UI v0.0.18; CA-1-008. STATUS 8/15 (53%). AP-2026-09-24-1208.
+- 2026-09-24 · Agente do cliente · F1-T008 executada / analisada.
+- 2026-09-24 · JP/Iverson - Champions · Task F1-T003 concluída: bordas de lote `/lotes` UI v0.0.17; CA-1-002/003. STATUS 7/15. AP-2026-09-24-1158.
 - 2026-09-24 · Agente do cliente · F1-T003 executada / analisada.
 - 2026-09-24 · JP/Iverson - Champions · Task F1-T012 concluída: visão `/visao` UI v0.0.14; CA-1-011/013. STATUS 6/15. Onda 2 completa. AP-2026-09-24-1148.
 - 2026-09-24 · Agente do cliente · F1-T012 executada / analisada.
