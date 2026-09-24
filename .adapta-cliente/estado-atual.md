@@ -1,14 +1,14 @@
 # Estado atual — Adapta Cliente
 
-- task_id: (nenhuma)
+- task_id: F1-T007
 - champion: JP/Iverson - Champions
-- spec: —
-- etapa: sem_task
-- autorizacao_implementacao: —
+- spec: 04_fase-atual/specs/spec-1-002-catalogo-de-regras-e-decisoes.md
+- etapa: aguardando_autorizacao
+- autorizacao_implementacao: pendente — aguarda mensagem explícita do champion
 - teste_humano: —
 - verificacao_automatica: —
-- aprendizado: capturado AP-2026-09-24-1113
-- ultima_acao: F1-T002 concluída (teste humano OK + revalidação independente)
-- proxima_acao: aguardar pedido explícito para próxima task (F1-T007 ou F1-T012 elegíveis)
-- atualizado_em: 2026-09-24T11:13-03:00
-- nota_dono: —
+- aprendizado: pendente
+- ultima_acao: análise profunda F1-T007 (proxima-task); relatório entregue; parada no portão 1
+- proxima_acao: aguardar "Autorizo implementar a F1-T007 conforme o plano"
+- atualizado_em: 2026-09-24T11:20-03:00
+- nota_dono: dono formal = Responsável de domínio; champion coordena
