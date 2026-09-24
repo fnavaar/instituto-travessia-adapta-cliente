@@ -7,6 +7,8 @@
 
 ## Registro
 
+- 2026-09-24 · Agente do cliente · F1-T012 executada: visão `/visao` no Skip Travessia 60853 (UI v0.0.14) — filtros contrato/período/área/responsável/status, papel de teste (F1-T011), PEND-001, DEC-PILOTO-001, DEC-ORFA-001, cobertura incompleta LOT-002/indicador, alertas internos deduplicados (`upsertAlert`, RN-1.003-06), CA-1-011/013. QA setup/static/build/test/integrations OK. Fixture agregada F1-T001+006+011. Evidências em `04_fase-atual/F1-T012/`. Aguarda teste humano.
+- 2026-09-24 · Agente do cliente · F1-T012 analisada (execute→proxima-task): elegível Onda 2 restante; relatório em `04_fase-atual/F1-T012/analise-proxima-task.md`; estado aguardando_autorizacao.
 - 2026-09-24 · JP/Iverson - Champions · Task F1-T007 concluída: catálogo `/regras` (Skip 60853, UI v0.0.13) — RN-PILOTO-001/002/003 com fonte, vigência, estado; CA-1-006 detalhe completo; CA-1-007 bloqueio de aprovação em 002/003; versionamento mínimo RN-1.002-02; fixture F1-T006 embutida. Evidência: teste humano OK; revalidação independente (rota, `canApproveRule`, sem dado real). Aprendizado AP-2026-09-24-1130. STATUS 5/15 (33%).
 - 2026-09-24 · Agente do cliente · F1-T007 executada: catálogo `/regras` no Skip Travessia 60853 (UI v0.0.13) — fixture F1-T006 embutida, detalhe CA-1-006 (RN-PILOTO-001), bloqueio CA-1-007 (002/003), versionamento mínimo RN-1.002-02, logs sintéticos. Build/static/test OK; PB Cloud migrations seguem dívida F1-T002 (fora do gate). Evidências em `04_fase-atual/F1-T007/`. Aguarda teste humano.
 - 2026-09-24 · Agente do cliente · F1-T007 analisada (proxima-task): elegível Onda 2; relatório em `04_fase-atual/F1-T007/analise-proxima-task.md`; estado aguardando_autorizacao.
