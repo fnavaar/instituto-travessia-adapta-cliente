@@ -3,12 +3,12 @@
 - task_id: F1-T011
 - champion: JP/Iverson - Champions
 - spec: 04_fase-atual/specs/spec-1-003-visao-gestao-a-vista-e-rls.md
-- etapa: aguardando_autorizacao
-- autorizacao_implementacao: ausente
+- etapa: implementando
+- autorizacao_implementacao: confirmada 2026-09-24T08:37-03:00 · "Autorizo implementar a F1-T011 conforme o plano" (+ "prossiga… execute" na mesma sessão)
 - teste_humano: pendente
 - verificacao_automatica: pendente
 - aprendizado: pendente
-- ultima_acao: análise profunda de F1-T011 concluída (SPEC-1-003 lida; matriz F1-T001 e fixtures F1-T001/F1-T006 usadas como base); relatório apresentado ao champion
-- proxima_acao: aguardar autorização para implementar
-- atualizado_em: 2026-09-24T08:35-03:00
-- nota_dono: dono formal da task = Segurança/qualidade; champion coordena o pacote de pré-condições (sem alterar permissões globais)
+- ultima_acao: autorização recebida; implementando pacote RLS (matriz, identidades, fixture, política, manifesto)
+- proxima_acao: registrar artefatos e verificar
+- atualizado_em: 2026-09-24T08:40-03:00
+- nota_dono: dono formal = Segurança/qualidade; champion coordena; sem permissão global
