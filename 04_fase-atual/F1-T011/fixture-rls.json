@@ -1,0 +1,113 @@
+{
+  "$schema": "adapta-cliente/fixture/v1",
+  "task": "F1-T011",
+  "spec": "SPEC-1-003",
+  "generatedAt": "2026-09-24",
+  "synthetic": true,
+  "notice": "Fixture 100% sintetica para testes autorizado/negado. Nenhum CPF, salario, dado bancario ou dado pessoal real.",
+  "pilot_contract": "CTR-PILOTO-001",
+  "identities_ref": "identidades-teste.md",
+  "authorized_objects": [
+    {
+      "object_ref": "CTR-PILOTO-001",
+      "type": "contract",
+      "area": "AREA-CONTRATOS",
+      "allowed_roles": ["champion", "contratos", "direcao", "dprh", "financeiro"],
+      "source_ref": "SRC-CONTRATO-001"
+    },
+    {
+      "object_ref": "DOC-CONTRATO-001",
+      "type": "document",
+      "area": "AREA-CONTRATOS",
+      "contract_ref": "CTR-PILOTO-001",
+      "allowed_roles": ["champion", "contratos", "direcao"],
+      "sensitivity": "media"
+    },
+    {
+      "object_ref": "DOC-FIN-001",
+      "type": "document",
+      "area": "AREA-FIN",
+      "contract_ref": "CTR-PILOTO-001",
+      "allowed_roles": ["champion", "financeiro", "direcao"],
+      "sensitivity": "media",
+      "note": "relatorio financeiro sintetico — sem dado bancario real"
+    },
+    {
+      "object_ref": "PEND-001",
+      "type": "pendency",
+      "contract_ref": "CTR-PILOTO-001",
+      "allowed_roles": ["champion", "financeiro", "direcao"],
+      "owner": "responsavel.financeiro@piloto.test",
+      "next_action": "reenviar lote corrigido"
+    },
+    {
+      "object_ref": "DEC-PILOTO-001",
+      "type": "decision",
+      "contract_ref": "CTR-PILOTO-001",
+      "allowed_roles": ["champion", "financeiro", "direcao"],
+      "state": "aberta",
+      "has_owner": true
+    },
+    {
+      "object_ref": "DEC-ORFA-001",
+      "type": "decision",
+      "contract_ref": "CTR-PILOTO-001",
+      "allowed_roles": ["champion", "direcao"],
+      "state": "aberta",
+      "has_owner": false,
+      "note": "decisao sem dono — fila critica do champion (RN-1.003-03)"
+    }
+  ],
+  "denied_objects": [
+    {
+      "object_ref": "CTR-OUTRO-999",
+      "type": "contract",
+      "area": "AREA-OUTRA",
+      "reason": "fora do contrato piloto",
+      "expected": "negado sem revelar conteudo nem existencia sensivel",
+      "audit": true
+    },
+    {
+      "object_ref": "DOC-OUTRO-999",
+      "type": "document",
+      "contract_ref": "CTR-OUTRO-999",
+      "sensitivity": "alta",
+      "reason": "documento de outro contrato",
+      "expected": "negado + auditado (RN-1.003-01)"
+    },
+    {
+      "object_ref": "DOC-FIN-SENSIVEL-001",
+      "type": "document",
+      "contract_ref": "CTR-PILOTO-001",
+      "area": "AREA-FIN",
+      "denied_for_roles": ["dprh", "negado"],
+      "reason": "papel sem alcada financeira",
+      "expected": "negado para dprh e negado.externo"
+    },
+    {
+      "object_ref": "REG-DP-MASCARADO-001",
+      "type": "hr_record_masked",
+      "contract_ref": "CTR-PILOTO-001",
+      "area": "AREA-DPRH",
+      "denied_for_roles": ["financeiro", "negado"],
+      "reason": "dado de pessoal fora do papel financeiro",
+      "expected": "negado; conteudo mascarado mesmo para autorizados de DP"
+    }
+  ],
+  "coverage_incomplete": {
+    "object_ref": "LOT-002",
+    "reason": "campo obrigatorio ausente (source_version)",
+    "display": "cobertura incompleta — nao apresentar como resultado completo (RN-1.003-02)"
+  },
+  "error_paths": [
+    "permissao negada",
+    "filtro malformado",
+    "dado sem fonte",
+    "decisao sem dono",
+    "alerta duplicado",
+    "log indisponivel",
+    "fonte indisponivel",
+    "timeout de consulta",
+    "rollback"
+  ]
+}
