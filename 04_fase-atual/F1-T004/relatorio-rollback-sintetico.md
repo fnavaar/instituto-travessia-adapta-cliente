@@ -1,8 +1,10 @@
 # Relatório de rollback sintético — F1-T004
 
+> Após teste humano OK (2026-09-24).
+
 ## Fluxo de prova
 
-### Antes (após cenário 4)
+### Antes (cenário 4)
 
 | lot_ref | versão | status | corrente |
 |---|---|---|---|
@@ -18,13 +20,12 @@
 
 ### Contagens
 
-| métrica | antes | depois |
-|---|---|---|
-| lots.length | N | N (ou N se já existia; **nunca N-1**) |
-| logs | M | M+1 (`kind: rollback`) |
+| métrica | regra |
+|---|---|
+| lots.length | **nunca diminui** (map → `revertido`, não filter-delete) |
+| logs | append `kind: rollback` |
+| fonte | `source_ref` de v1 e v2 permanece |
 
-### JSON negação parcial (5b)
+### 5b — sem motivo
 
-Rollback com `reason: ''` → `{ result: 'erro', lots_before === lots_after }`.
-
-Fonte `source_ref` de v1 e v2 permanece nos registros.
+`result: 'erro'` · `lots_before === lots_after` · nenhuma mutação.

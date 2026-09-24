@@ -5,8 +5,9 @@
 
 ## Registro
 
-- 2026-09-24 · Agente do cliente · F1-T004 executada: rollback de lote em `/lotes` (Skip 60853, UI v0.0.20) — `rollbackLot`/`getPresentedLot` (CA-1-004 · RN-1.001-05); status `revertido` sem hard-delete; cenários 4/5/5b; log `rollback`. QA setup/static/build/test/integrations OK. Evidências em `04_fase-atual/F1-T004/`. Aguarda teste humano.
-- 2026-09-24 · Agente do cliente · F1-T004 analisada (execute→proxima-task Onda 4): elegível; relatório em `04_fase-atual/F1-T004/analise-proxima-task.md`; estado aguardando_autorizacao.
+- 2026-09-24 · JP/Iverson - Champions · Task F1-T004 concluída: rollback de lote em `/lotes` (Skip 60853, UI v0.0.20) — `rollbackLot`/`getPresentedLot`; status `revertido` sem hard-delete; cenários 4/5/5b; log `rollback`; CA-1-004 · RN-1.001-05. Evidência: teste humano OK; revalidação independente (lots/logs preservados). Aprendizado AP-2026-09-24-1340. STATUS 10/15 (67%).
+- 2026-09-24 · Agente do cliente · F1-T004 executada: rollback de lote em `/lotes` UI v0.0.20. Aguarda teste humano.
+- 2026-09-24 · Agente do cliente · F1-T004 analisada (execute→proxima-task Onda 4): elegível; aguardando_autorizacao.
 - 2026-09-24 · JP/Iverson - Champions · Task F1-T013 concluída: bateria RLS `/rls` UI v0.0.19; CA-1-012. STATUS 9/15 (60%). Onda 3 completa. AP-2026-09-24-1225.
 - 2026-09-24 · Agente do cliente · F1-T013 executada / analisada.
 - 2026-09-24 · JP/Iverson - Champions · Task F1-T008 concluída: decisão `/decisoes` UI v0.0.18; CA-1-008. STATUS 8/15. AP-2026-09-24-1208.

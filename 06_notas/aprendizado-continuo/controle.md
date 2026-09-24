@@ -11,3 +11,4 @@ Registro das triagens internas. Uma linha por triagem.
 - 2026-09-24T11:58-03:00 · task F1-T003 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1158-cenarios-fixture-como-botoes.md
 - 2026-09-24T12:08-03:00 · task F1-T008 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1208-sugestao-nunca-fecha-sozinha.md
 - 2026-09-24T12:25-03:00 · task F1-T013 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1225-negacao-sem-payload.md
+- 2026-09-24T13:40-03:00 · task F1-T004 · capturado:06_notas/aprendizado-continuo/AP-2026-09-24-1340-rollback-como-marcacao.md
