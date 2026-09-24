@@ -1,13 +1,14 @@
 # Estado atual — Adapta Cliente
 
-- task_id: nenhuma
+- task_id: F1-T002
 - champion: JP/Iverson - Champions
-- spec: nenhuma
-- etapa: sem_task
+- spec: 04_fase-atual/specs/spec-1-001-central-de-fontes-e-piloto.md
+- etapa: aguardando_autorizacao
 - autorizacao_implementacao: ausente
-- teste_humano: nao_aplicavel
+- teste_humano: pendente
 - verificacao_automatica: pendente
-- aprendizado: capturado:06_notas/aprendizado-continuo/AP-2026-09-24-0918-pedido-em-lote-nao-fecha-fase.md
-- ultima_acao: F1-T011 concluída em 2026-09-24 (teste humano aprovado; revalidação independente passou; Onda 1 completa 3/3; fase.md/STATUS/changelog atualizados)
-- proxima_acao: aguardar pedido explícito para a próxima task (Onda 2: F1-T002 / F1-T007 / F1-T012) — não executar fase inteira
-- atualizado_em: 2026-09-24T09:18-03:00
+- aprendizado: pendente
+- ultima_acao: análise profunda de F1-T002 concluída (SPEC-1-001, fixture F1-T001, Skip 60853 inspecionado); relatório apresentado ao champion
+- proxima_acao: aguardar autorização para implementar
+- atualizado_em: 2026-09-24T09:32-03:00
+- nota_dono: dono formal = Gestão de Contratos; champion coordena; fixture sintética da F1-T001 como insumo; sem dado real
